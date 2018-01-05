@@ -2,9 +2,10 @@
 language: cpp
 # Compiler selection
 compiler:
+  - clang
   - gcc
 # Build steps
 script:
   - mkdir build
   - cd build
-  - cmake nier.cpp && make
+  - cmake .. && make
