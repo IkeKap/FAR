@@ -1,2 +1,6 @@
 language: cpp
-build: make
+compiler: gcc
+
+script:
+  -qmake
+  -make
