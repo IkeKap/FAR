@@ -1,6 +1,10 @@
+# Enable C++ support
 language: cpp
-compiler: gcc
-
+# Compiler selection
+compiler:
+  - gcc
+# Build steps
 script:
-  -qmake
-  -make
+  - mkdir build
+  - cd build
+  - cmake nier.cpp && make
